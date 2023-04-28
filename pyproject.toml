@@ -3,18 +3,22 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "project_name"
+name = "format_elan"
 version = "0.0.1"
 authors = [
-  { name="OpenPecha", email="dev@openpecha.org" },
+  { name="Sonam Phuntsog", email="sp@monlam.ai" },
 ]
-description = "A small example package"
+description = "Package to export elan files to tsv"
 readme = "README.md"
 requires-python = ">=3.8"
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "pympi-ling"
 ]
 
 [project.optional-dependencies]
